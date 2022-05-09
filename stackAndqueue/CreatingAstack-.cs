@@ -44,6 +44,20 @@ namespace stackAndqueue
             }
             Console.WriteLine(data + " pushed to stack");
         }
+        public int pop()
+        {
+            int popped = int.MaxValue;
+            if (root == null)
+            {
+                Console.WriteLine("Stack is Empty");
+            }
+            else
+            {
+                popped = root.data;
+                root = root.next;
+            }
+            return popped;
+        }
 
         public int peek()
         {

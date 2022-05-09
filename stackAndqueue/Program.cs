@@ -6,17 +6,23 @@ namespace stackAndqueue
     {
         public static void Main(String[] args)
         {
-            Console.WriteLine("Welcome to stack And Queue programmimg!");
-            CreatingAstack_ sll = new CreatingAstack_();
+            
+                        Console.WriteLine("Welcome to stack And Queue programmimg!");
+                        CreatingAstack_ s1 = new CreatingAstack_();
+                        
+                        s1.push(70);
+                        s1.push(30);
+                        s1.push(56);
 
-            sll.push(70);
-            sll.push(30);
-            sll.push(56);
-
-            Console.WriteLine("Top element is " + sll.peek());
+                        Console.WriteLine(s1.pop() + " popped from stack");
+                        Console.WriteLine(s1.pop() + " popped from stack");
+                        Console.WriteLine(s1.pop() + " popped from stack");
+                        Console.WriteLine("Top element is " + s1.peek());
+                        
+                }
+            }
         }
-    }
-}
+    
 
 
 
