@@ -52,7 +52,23 @@ namespace stackAndqueue
             this.rear.next = temp;
             this.rear = temp;
         }
-        internal void Display()
+        public void dequeue()
+        {
+            // If queue is empty, return NULL.
+            if (this.front == null)
+                return;
+
+            // Store previous front and
+            // move front one node ahead
+            QNode temp = this.front;
+            this.front = this.front.next;
+
+            // If front becomes NULL,
+            // then change rear also as NULL
+            if (this.front == null)
+                this.rear = null;
+        }
+            internal void Display()
         {
             QNode temp = this.front;
             if (temp == null)
@@ -67,6 +83,7 @@ namespace stackAndqueue
 
             }
         }
+
     }
 }
 

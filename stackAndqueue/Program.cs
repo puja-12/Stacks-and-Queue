@@ -29,10 +29,16 @@ namespace stackAndqueue
                         break;
                     case 2:
                         Queue q=new Queue();
+                        Console.WriteLine("elements in queue");
+
                         q.enqueue(56);
                         q.enqueue(30);
                         q.enqueue(70);
                         q.Display();
+                        Console.WriteLine("first element is remove");
+                        q.dequeue();
+                        Console.WriteLine("second element is remove");
+                        q.dequeue();
                         Console.WriteLine("Queue Front : " + q.front.key);
                         Console.WriteLine("Queue Rear : " + q.rear.key);
 
